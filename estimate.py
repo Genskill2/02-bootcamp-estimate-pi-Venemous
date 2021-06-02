@@ -7,9 +7,9 @@ import random
 def wallis(i) :
     x=1  
     for n in range(1,i+1):
-        a= 4*n*n
-        b= a - 1
-        c=a/b
+        a= (4*n*n)
+        b= (a-1)
+        c=(a/b)
         x=x*c
 
     x=x*2
@@ -23,7 +23,7 @@ def monte_carlo(n) :
     while n>0 : 
         x=random.random()
         y=random.random()
-        if x**2+y**2 >1 :
+        if ((x**2)+(y**2)) >1 :
             out = out+1
         else :
             ins=ins+1
