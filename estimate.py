@@ -6,7 +6,7 @@ import random
 
 def wallis(i) :
     x=1  
-    for n in range(1,i):
+    for n in range(1,i+1):
         a= 4*n*n
         b= a - 1
         c=a/b
