@@ -5,13 +5,15 @@ import random
 
 
 def wallis(i) :
-    p=1  
-    n=1
-    while n <= i:
-        p=p*(4*n*n)/(4*n*n-1)
-        n=n+1
-    r=p*2
-    return r
+    x=1  
+    for n in range(1,i):
+        a= 4*n*n
+        b= a - 1
+        c=a/b
+        x=x*c
+
+    x=x*2
+    return x
 
 
 def monte_carlo(n) :
